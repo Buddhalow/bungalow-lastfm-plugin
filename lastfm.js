@@ -12,7 +12,7 @@ define([
       
     })
     document.addEventListener('viewload', (e) => {
-        if (/^bungalow:artist:(.*)$/g.test(e.detail.uri)) {
+        if (/^bungalow:artist:(.*)$/.test(e.detail.uri)) {
             var tab = e.detail.addTab('lastfm-biography', '<i class="fa fa-lastfm"></i> Biography');
             var container = document.createElement('div');
             container.style.display = 'flex';
